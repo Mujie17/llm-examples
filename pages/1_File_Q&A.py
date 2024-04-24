@@ -1,8 +1,7 @@
 import streamlit as st
 import anthropic
-import chromadb
 
-client = chromadb.PersistentClient(path='./data')
+
 with st.sidebar:
     anthropic_api_key = st.text_input("Anthropic API Key", key="file_qa_api_key", type="password")
     "[View the source code](https://github.com/streamlit/llm-examples/blob/main/pages/1_File_Q%26A.py)"
